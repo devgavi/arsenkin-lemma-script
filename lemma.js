@@ -111,10 +111,14 @@ const observer = new MutationObserver(function () {
     observer.disconnect();
 });
 
-const container = document.querySelector('#container');
+const initObserver = function () {
+    const container = document.querySelector('#container');
 
-observer.observe(container, {
-    childList: true,
-    attributes: false,
-    characterData: false
-});
+    observer.observe(container, {
+        childList: true,
+        attributes: false,
+        characterData: false
+    });
+};
+
+document.querySelector('#ok').addEventListener('click', initObserver);
