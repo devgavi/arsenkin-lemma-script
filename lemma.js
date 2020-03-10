@@ -51,10 +51,10 @@ function collectSelectedRows() {
     for (const i in inputList) {
         if (inputList.hasOwnProperty(i)) {
             if (inputList[i].checked) {
-                const parentRow = inputList[i].closest('tr').textContent;
-                const childContent = (parentRow).replace(/\n/g, ' ');
+                const parentRow = inputList[i].closest('tr');
+                const childContent = parentRow.querySelectorAll('td');
 
-                selected.push(childContent.trim());
+                selected.push(childContent[0].textContent.trim());
             }
         }
     }
