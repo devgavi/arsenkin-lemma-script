@@ -1,6 +1,6 @@
-# Arsenkin Custom Script
+# Arsenkin Lemmatizator Script
 
-A small custom script for Arsenkin lemmatizator that add a few features:
+A small script for Arsenkin lemmatizator that add a few features:
 * add checkbox near the each element
 * highlight selected elements
 * add button for copy only selected elements
