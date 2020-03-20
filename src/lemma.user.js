@@ -1,3 +1,15 @@
+// ==UserScript==
+// @name          Arsenkin lemmatizator script
+// @namespace     https://openuserjs.org/users/devgavi
+// @description   Add button for copy only selected elements
+// @version       0.2.0
+// @copyright     2020, devgavi (https://github.com/devgavi/arsenkin-lemmatizator-script)
+// @license       MIT
+// @icon          https://arsenkin.ru/favicon.ico
+// @include       https://arsenkin.ru/tools/lemma/*
+// @grant         none
+// ==/UserScript==
+
 'use strict';
 
 function getAllRows() {
